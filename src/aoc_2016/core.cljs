@@ -1,4 +1,4 @@
-(ns clojure-fun.core)
+(ns aoc-2016.core)
 
 
 (defn -main

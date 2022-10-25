@@ -1,6 +1,6 @@
-(ns clojure-fun.day-01-test
+(ns aoc-2016.day-01-test
   (:require [clojure.test :as t]
-            [clojure-fun.day-01 :as day-01]))
+            [aoc-2016.day-01 :as day-01]))
 
 (t/deftest day-01-test
   (t/testing "Part 1"
