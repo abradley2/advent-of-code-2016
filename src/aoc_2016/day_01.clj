@@ -4,15 +4,13 @@
 (def input (slurp "resources/day_01/input.txt"))
 
 (defn parse-instruction [input]
-  (->> input
-       (#(string/split % #""))
+  (->> (string/split input #"")
        ((fn [seq]
           {:direction (first seq)
            :distance (->> seq rest (string/join "") read-string)}))))
 
 (defn parse-input [input]
-  (->> input
-       (#(string/split % #",\s?"))
+  (->> (string/split input #",\s?")
        (map parse-instruction)))
 
 (def compass [:N :E :S :W])
